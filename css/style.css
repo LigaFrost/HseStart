@@ -110,3 +110,27 @@ margin-top: -65px;
 .social-icons li a i{
 	 text-align: center!important;
 }
+.article{
+	height: 445px;
+	margin-top: 20px;
+	text-align: center;
+}
+.slider{
+	padding: 0px;
+	position: relative;
+}
+.slider-button{
+	background-color: #fff!important;
+	border-radius: 100%!important;
+	padding: 5px 10px!important;
+	border: none!important;
+	width: 42px;
+	height: 42px;
+	position: absolute;
+	top:200px;
+	z-index: 10;
+}
+.slider-button:hover{
+	background-color: #c4ffff!important;
+	color: #fff;
+}
