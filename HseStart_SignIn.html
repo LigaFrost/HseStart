@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>HseSignIn</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+
+  </head>
+
+<body>
+
+	  	<nav class="navbar navbar-default" style="height: auto; background-color: #dfdfff; border-bottom:2px inset white;">
+				<div class="row">
+					<div class="centered col-xs-12 col-md-12" style="padding-top: 1em;padding-bottom: 1em;">
+				  <a href="https://vk.com">
+				  			<img class="logo" src="images/logo.png"></a>
+				  	</div>
+
+			</div></nav>
+<form method='post' class='reg-form'>
+<!--ТУТ ПРОВЕРКА ПОЛЬЗОВАТЕЛЯ ПО БД, МЫ ПРОСТО ПРОБИЛИ ПОЛЯ-->
+    <div class="centered">
+      <h1>HseStart</h1>
+    </div>
+
+    <div class='form-row'>
+      <label for='form_email'>Email: </label>
+      <input type='email' id='form_email' name='email'>
+    </div>
+
+    <div class='form-row'>
+      <label for='form_Pass'>Пароль: </label>
+      <input type='password' id='formPass' name='Pass'>
+    </div>
+
+    <div class="centered col-xs-12 col-md-12" style="text-orientation: center; padding:0!important">
+      <button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s"><a href="https://lms.hse.ru">Регистрация</a></button>
+      <button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s"><a href="https://lms.hse.ru">Вход</a></button>
+    </div>
+
+	</form>
+</body>
+</html>
