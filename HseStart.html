@@ -8,18 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>HseStart</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo.png">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
 
   </head>
 
 <header>
 
-	  	<nav class="navbar navbar-default" style="height: auto; background-color: #F0F0F0;">
+	  	<nav class="navbar navbar-default" style="height: auto; background:inherit;">
 
 				<div class="row" style="margin:0!important">
 					<div class="col-xs-12 col-md-1" style="padding-left:2em; padding-top: 0.5em;">
@@ -28,41 +28,38 @@
 				  	</div>
 
 				<div class="menu-items centered col-sm-12 col-md-11" style="text-orientation: center; padding:0!important">
-					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Students</button>
+					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Quiz</button>
 					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Curators</button>
 					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Teachers</button>
 					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">FAQ</button>
 					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Contacts</button>
           <li><a cl type="button" data-toggle="collapse" name="exitbutton" aria-expanded="false">
 
-            <a href="http://htmlbook.ru/css/display"><i class="fa fa-sign-out fa-lg" aria-hidden="true" style="text-align:right"></i></a></button></li>
+            <a href="http://htmlbook.ru/css/display"><i class="fa fa-sign-out fa-lg" aria-hidden="true" style="font-size: 3em"></i></a></button></li>
 				</div>
 			</div>
 
 </header>
-  <body>
+  <body style="background: #BBD2C5; background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);background: linear-gradient(to bottom, #292E49, #536976, #BBD2C5);">
     <center>
     <div class="sidebar col-xs-12 col-sm-12 col-md-12">
-          <div class="sb1">
+          <div class="sb1" style="background: inherit;">
 
             <div class="fon icon">
                 </div>
 
-                    <div class="krug">
+                    <div class="krug" style="background-image: url(images/123.jpg);background-size: cover">
                         <ul class="group col-sm-12 col-md-12">
-                <p><font size="8" color="white" face="Arial">177</font></p>
+
 
                   </div>
                   <div class="best3">Мариам Степанян Арташесовна</div>
                           <div class="under"> Город <br> 11.08.1999 <br> 1 курс, Бизнес-Информатика </div>  <!-- здесь будет инфа: Город, Факультет, дата рож -->
                           <nav class="navbar1 navbar-default" style="height: auto"  >
-                          <ul class="nav navbar-nav social-icons col-sm-12 col-md-12 centered">
-                          <center>
+                          <ul class="nav navbar-nav social-icons col-sm-12 col-md-12 centered" style="    padding-right: 0px">
                            <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                         </center>
+
                          </ul>
                        </nav>
  </ul>
@@ -93,21 +90,22 @@
                            <li class="slide"><img src="https://hsto.org/files/ec5/592/f1e/ec5592f1e814401eb38305682a8e88d4.jpg" alt="3" class="slide-img"></li>
                            <li class="slide"><img src="https://hsto.org/files/eda/61a/3c5/eda61a3c53db408d820643998d9acd81.jpg" alt="4" class="slide-img"></li>
                        </ul>
+		<div id="prev-next-btns">
+				                <div id="prev-btn"  style="background-color:#337ab7"><i class="fa fa-angle-left fa-2x" aria-hidden="true" style="margin-top: 0.4em; margin-right: 0.1em;color:white"></i></div>
+				                <div id="next-btn" style="background-color:#337ab7"><i class="fa fa-angle-right fa-2x" aria-hidden="true" style="margin-top: 0.4em;margin-left: 0.1em;color:white"></i></div>
+            				</div>
 
-                       <div id="prev-next-btns">
-                          <button class="slider-button" style="float: left; left:35px;"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-                           <div id="next-btn" style="float: right; right: 35px;"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></div>
-                       </div>
 
-                       <ul id="nav-btns">
-                           <li class="slide-nav-btn"></li>
-                           <li class="slide-nav-btn"></li>
-                           <li class="slide-nav-btn"></li>
-                           <li class="slide-nav-btn"></li>
-                       </ul>
+
+
                    </div>
                </div>
 
 
   </body>
+  <footer>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  	  	<script src="js/index.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  </footer>
 <html/>

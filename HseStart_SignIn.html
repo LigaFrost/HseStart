@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>HseSignIn</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/logo.png">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+<head>
 
-  </head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>HseStartSignIn</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="images/logo.png">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<body>
+</head>
+<header>
 
-	  	<nav class="navbar navbar-default" style="height: auto; background-color: #dfdfff; border-bottom:2px inset white;">
-				<div class="row">
-					<div class="centered col-xs-12 col-md-12" style="padding-top: 1em;padding-bottom: 1em;">
-				  <a href="https://vk.com">
-				  			<img class="logo" src="images/logo.png" style="transform: scaleX(-1)"></a>
+	  	<nav class="navbar navbar-default" style="height: auto; background:inherit;">
+
+				<div class="row" style="margin:0!important">
+					<div class="col-xs-12 col-md-1" style="padding-left:2em; padding-top: 0.5em;">
+				  <a href="#">
+				  			<img class="logo" style="transform: scaleX(-1);" src="images/logo.png"></a>
 				  	</div>
 
-			</div></nav>
+				<div class="menu-items centered col-sm-12 col-md-10" style="text-orientation: center; padding:0!important">
+					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s" style="font-size:1.7em">FAQ</button>
+					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s" style="font-size: 1.7em">Contacts</button>
+				</div>
+			</div>
+
+</header>
+<body style="background: #BBD2C5; background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);background: linear-gradient(to bottom, #292E49, #536976, #BBD2C5);">
+
 <form method='post' class='reg-form'>
 <!--ТУТ ПРОВЕРКА ПОЛЬЗОВАТЕЛЯ ПО БД, МЫ ПРОСТО ПРОБИЛИ ПОЛЯ-->
     <div class="centered">
