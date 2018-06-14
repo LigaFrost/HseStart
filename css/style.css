@@ -468,6 +468,7 @@ border: solid 3px #ffffff;
 .form-row {
   margin-bottom: 8px;
   overflow: hidden;
+  color: #fff;
 }
 
 .form-row input {
