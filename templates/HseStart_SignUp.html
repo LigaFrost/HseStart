@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>HseStartSignUp</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="{{url_for('static', filename = 'css/style.css')}}" rel="stylesheet">
+  <link rel="shortcut icon" href="{{url_for('static', filename = 'images/logo.png')}}">
+<link rel="stylesheet" href="{{url_for('static', filename = 'font-awesome/css/font-awesome.min.css')}}">
+  <!-- Bootstrap -->
+  <link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+
+</head>
+
+<header>
+
+	  	<nav class="navbar navbar-default" style="height: auto; background:inherit;">
+
+				<div class="row" style="margin:0!important">
+					<div class="col-xs-12 col-md-1" style="padding-left:2em; padding-top: 0.5em;">
+				  <a href="/">
+				  			<img class="logo" style="transform: scaleX(-1);" src="{{url_for('static', filename = 'images/logo.png')}}"></a>
+				  	</div>
+
+            <div class="menu-items centered col-sm-12 col-md-10" style="text-orientation: center; padding:0!important">
+    					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s" style="font-size:1.7em">FAQ</button>
+    					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s" style="font-size: 1.7em">Contacts</button>
+    				</div>
+			</div>
+
+</header>
+<body style="height: -webkit-fill-available; background: #BBD2C5; background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);background: linear-gradient(to bottom, #292E49, #536976, #BBD2C5);">
+<div class="centered" style="color:#fff; padding-bottom:1.5em;font-family:'Noto Sans';">
+    <h1>Регистрация</h1>
+  </div>
+<form action="/add_student" method='post' enctype="multipart/form-data" class='reg-form'>  
+
+		<div class='form-row'>
+			<label for='first_name'>Имя: </label>
+    		<input type='text' id='first_name' name='first_name' style="color:black">
+  		</div>
+
+    <div class='form-row'>
+      <label for='form_mname'>Отчество: </label>
+        <input type='text' id='middle_name' name='middle_name' style="color:black">
+      </div>
+
+      <div class='form-row'>
+
+    <label for='form_sname'>Фамилия: </label>
+    <input type='text' id='last_name' name='last_name' style="color:black">
+  </div>
+
+<div class='form-row'>
+      <label for='form_email'>Email: </label>
+      <input type='email' id='email' name='email' style="color:black">
+    </div>
+
+		<div class='form-row'>
+			<label for='form_city'>Город: </label>
+			<input type='text' id='city' name='city' style="color:black">
+		</div>
+
+    <div class='form-row'>
+      <label for='form_date'>Дата рождения: </label>
+      <input type='text' id='date_of_birth' name='date_of_birth' style="color:black">
+    </div>
+
+    
+
+    <div class='form-row'>
+      <label for='form_Vk'>Vk: </label>
+      <input type='text' id='vk' name='vk' style="color:black">
+    </div>
+
+    <div class='form-row'>
+      <label for='form_Instagram'>Instagram: </label>
+      <input type='text' id='inst' name='inst' style="color:black">
+    </div>
+
+    <div class='form-row'>
+    <label for='form_Pass'>Пароль: </label>
+      <input type='password' id='password' name='password' style="color:black">
+    </div>
+   <div class="form-row">
+    <label for="file_update">Фотография </label>
+    <input type="file" id="image_href" name="image_href">
+  </div>
+
+		<div class="form-row" style="display:flex;justify-content:center; padding-bottom:5em">
+			<button type="submit" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s" style="height:3em;">Зарегистрироваться</button>
+		</div>
+
+	</form>
+</body>
+</html>

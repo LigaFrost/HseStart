@@ -9,11 +9,11 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>HseStartSignIn</title>
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="images/logo.png">
-<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link href="{{url_for('static', filename = 'css/style.css')}}" rel="stylesheet">
+  <link rel="shortcut icon" href="{{url_for('static', filename = 'images/logo.png')}}">
+<link rel="stylesheet" href="{{url_for('static', filename = 'font-awesome/css/font-awesome.min.css')}}">
   <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
 
 </head>
 <header>
@@ -22,8 +22,8 @@
 
 				<div class="row" style="margin:0!important">
 					<div class="col-xs-12 col-md-1" style="padding-left:2em; padding-top: 0.5em;">
-				  <a href="#">
-				  			<img class="logo" style="transform: scaleX(-1);" src="images/logo.png"></a>
+				  <a href="/">
+				  			<img class="logo" style="transform: scaleX(-1);" src="{{url_for('static', filename = 'images/logo.png')}}"></a>
 				  	</div>
 
 				<div class="menu-items centered col-sm-12 col-md-10" style="text-orientation: center; padding:0!important">
@@ -33,16 +33,14 @@
 			</div>
 
 </header>
-<body style="background: #BBD2C5; background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);background: linear-gradient(to bottom, #292E49, #536976, #BBD2C5);">
+<body style=" height: -webkit-fill-available; background: #BBD2C5; background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);background: linear-gradient(to bottom, #292E49, #536976, #BBD2C5);">
 
-<form method='post' class='reg-form'>
-    <div class="centered">
-      <h1>HseStart</h1>
-    </div>
+<form method='post' class='reg-form' style="padding-top:12em;">
+    <div class="centered" style="color:#fff; font-family:'Poppins';"><h1>HseStart</h1></div>
 
     <div class='form-row'>
       <label for='form_email'>Email: </label>
-      <input type='email' id='form_email' name='email'>
+      <input type='email' id='formEmail' name='email'>
     </div>
 
     <div class='form-row'>
@@ -51,7 +49,7 @@
     </div>
 
     <div class="centered col-xs-12 col-md-12" style="text-orientation: center; padding:0!important">
-      <button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Регистрация</button>
+      <button style="height:3em;" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Регистрация</button>
       <button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Вход</button>
     </div>
 

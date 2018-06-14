@@ -542,3 +542,22 @@ color: var(--dark-two);
 margin-left: 10px;
 margin-top: 8px;
 margin-right: 10px;}
+.art{
+  margin-top: 20px;
+  text-align: center;
+}
+.forquiz{
+  text-align: center;
+  font-size: 30px;
+
+}
+.yes{
+  text-align: center;
+  font-size: 30px;
+  color:green;
+}
+.no{
+  text-align: center;
+  font-size: 30px;
+  color:red;
+}

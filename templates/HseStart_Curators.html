@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 
   <head>
@@ -8,11 +9,11 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>HseStartCurators</title>
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/logo.png">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="{{url_for('static', filename = 'css/style.css')}}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{url_for('static', filename = 'images/logo.png')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename = 'font-awesome/css/font-awesome.min.css')}}">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
 
   </head>
 
@@ -22,24 +23,25 @@
 
 				<div class="row" style="margin:0!important">
 					<div class="col-xs-12 col-md-1" style="padding-left:2em; padding-top: 0.5em;">
-				  <a href="#">
-				  			<img class="logo" style="transform: scaleX(-1);" src="images/logo.png"></a>
+				  <a href="/">
+				  			<img class="logo" style="transform: scaleX(-1);" src="{{url_for('static', filename = 'images/logo.png')}}"></a>
 				  	</div>
 
 				<div class="menu-items centered col-sm-12 col-md-11" style="text-orientation: center; padding:0!important">
-					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Quiz</button>
-					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Curators</button>
-					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Teachers</button>
-					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">FAQ</button>
-					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Contacts</button>
+					<button onclick="window.location.href='/quiz'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Quiz</button>
+          <button onclick="window.location.href='/curators'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Curators</button>
+          <button onclick="window.location.href='/teachers'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Teachers</button>
+          <button onclick="window.location.href='https://ba.hse.ru/faq'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">FAQ</button>
+          
+          <button onclick="window.location.href='/contacts'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Contacts</button>
           <li><a cl type="button" data-toggle="collapse" name="exitbutton" aria-expanded="false">
 
-            <a href="http://htmlbook.ru/css/display"><i class="fa fa-sign-out fa-lg" aria-hidden="true" style="font-size: 3em"></i></a></button></li>
+            <a href="/logout"><i crass="fa fa-sign-out fa-lg" aria-hidden="true" style="font-size: 3em"></i></a></button></li>
 				</div>
 			</div>
 
 </header>
-  <body style="background: #BBD2C5; background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);background: linear-gradient(to bottom, #292E49, #536976, #BBD2C5);">
+  <body style=" height: -webkit-fill-available;background: #BBD2C5; background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);background: linear-gradient(to bottom, #292E49, #536976, #BBD2C5);">
   <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
     <div class="krug" style="background-image: url(images/Curators/Aida.jpg);background-size: cover">
         <ul class="group col-sm-12 col-md-12">
@@ -385,7 +387,7 @@
        </nav>
 </ul>
   </div>
-  <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
+  <div class="container col-xs-12 col-md-3" style="padding-top:11em;padding-bottom:3em;">
     <div class="krug" style="background-image: url(images/Curators/Vlada.jpg);background-size: cover">
         <ul class="group col-sm-12 col-md-12">
   </div>

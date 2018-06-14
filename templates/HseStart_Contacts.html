@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>HseStartContacts</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="{{url_for('static', filename = 'css/style.css')}}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{url_for('static', filename = 'images/logo.png')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename = 'font-awesome/css/font-awesome.min.css')}}">
+    <!-- Bootstrap -->
+    <link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+
+  </head>
+
+<header>
+
+	  	<nav class="navbar navbar-default" style="height: auto; background:inherit;">
+
+				<div class="row" style="margin:0!important">
+					<div class="col-xs-12 col-md-1" style="padding-left:2em; padding-top: 0.5em;">
+				  <a href="/">
+				  			<img class="logo" style="transform: scaleX(-1);" src="{{url_for('static', filename = 'images/logo.png')}}"></a>
+				  	</div>
+
+				<div class="menu-items centered col-sm-12 col-md-11" style="text-orientation: center; padding:0!important">
+					<button onclick="window.location.href='/quiz'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Quiz</button>
+          <button onclick="window.location.href='/curators'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Curators</button>
+          <button onclick="window.location.href='/teachers'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Teachers</button>
+          <button onclick="window.location.href='https://ba.hse.ru/faq'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">FAQ</button>
+          
+          <button onclick="window.location.href='/contacts'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Contacts</button>
+          <li><a cl type="button" data-toggle="collapse" name="exitbutton" aria-expanded="false"><a href="/logout"><i class="fa fa-sign-out fa-lg" aria-hidden="true" style="font-size: 3em;"></i></a></button></li>
+				</div>
+			</div>
+
+
+</header>
+
+  <body style="height: -webkit-fill-available; background: #BBD2C5; background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);background: linear-gradient(to bottom, #292E49, #536976, #BBD2C5);">
+  <center>
+    <div class="sidebar col-xs-12 col-sm-12 col-md-12" >
+
+       
+
+        <div><a class="centered" style="padding-top:6.5em;font-size: 22px;color:#fff; padding-bottom:1.5em;font-family:'Noto Sans';" href="https://www.hse.ru">О Вышке<i class="fa fa-university" aria-hidden="true" style="padding-left:1em;"></i></a></div>
+
+        <div><a class="centered" style="font-size: 22px;color:#fff; padding-bottom:1.5em;font-family:'Noto Sans';" href="https://lms.hse.ru">LMS<i class="fa fa-graduation-cap" aria-hidden="true" style="padding-left:1em;"></i></a></div>
+
+        <div><a class="centered" style="font-size: 22px;color:#fff;padding-bottom: 1.5em;font-family:'Noto Sans';" href="canvas.instructure.com">Canvas<i class="fa fa-cloud-upload" aria-hidden="true" style="padding-left:1em;"></i></a></div>
+
+        <div><a class="centered" style="font-size: 22px;color:#fff;padding-bottom: 1.5em;font-family:'Noto Sans';" href="https://www.hse.ru/dormitory/">Общежития<i class="fa fa-building-o" aria-hidden="true" style="padding-left:1em;"></i></a></div>
+
+    </div>
+  </center>
+</body>
+</html>
