@@ -23,7 +23,7 @@
 
 				<div class="row" style="margin:0!important">
 					<div class="col-xs-12 col-md-1" style="padding-left:2em; padding-top: 0.5em;">
-				  <a href="/">
+				  <a href="/student">
 				  			<img class="logo" style="transform: scaleX(-1);" src="{{url_for('static', filename = 'images/logo.png')}}"></a>
 				  	</div>
 
@@ -49,18 +49,15 @@
             <div class="fon icon">
                 </div>
 
-                    <div class="krug" style="background-image: url(images/123.jpg);background-size: cover">
+                    <div class="krug" style="background-image: url({{url_for('static', filename = 'images/'+student['image'] )}})";background-size: cover">
                         <ul class="group col-sm-12 col-md-12">
-
-
                   </div>
-                  <div class="best3">Мариам Степанян Арташесовна</div>
-                          <div class="under"> Город <br> 11.08.1999 <br> 1 курс, Бизнес-Информатика </div>  <!-- здесь будет инфа: Город, Факультет, дата рож -->
+                  <div class="best3">{{student['last_name']}} {{student['first_name']}} {{student['middle_name']}}</div>
+                          <div class="under"> {{student['city']}} <br> {{student['date_of_birth']}} </div>  <!-- здесь будет инфа: Город, Факультет, дата рож -->
                           <nav class="navbar1 navbar-default" style="height: auto"  >
                           <ul class="nav navbar-nav social-icons col-sm-12 col-md-12 centered" style="    padding-right: 0px">
-                           <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-
+                           <li><a href="{{student['vk']}}"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                           <li><a href="{{student['inst']}}"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                          </ul>
                        </nav>
  </ul>

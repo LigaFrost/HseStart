@@ -27,32 +27,32 @@
 				  	</div>
 
 				<div class="menu-items centered col-sm-12 col-md-10" style="text-orientation: center; padding:0!important">
-					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s" style="font-size:1.7em">FAQ</button>
-					<button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s" style="font-size: 1.7em">Contacts</button>
+					<button onclick="window.location.href='https://ba.hse.ru/faq'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s" style="font-size:1.7em">FAQ</button>
+					<button onclick="window.location.href='/contacts'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s" style="font-size: 1.7em">Contacts</button>
 				</div>
 			</div>
 
 </header>
 <body style=" height: -webkit-fill-available; background: #BBD2C5; background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);background: linear-gradient(to bottom, #292E49, #536976, #BBD2C5);">
 
-<form method='post' class='reg-form' style="padding-top:12em;">
+<form action='/signin/' method='post' class='reg-form' style="padding-top:12em;">
     <div class="centered" style="color:#fff; font-family:'Poppins';"><h1>HseStart</h1></div>
 
     <div class='form-row'>
       <label for='form_email'>Email: </label>
-      <input type='email' id='formEmail' name='email'>
+      <input type='email' id='formEmail' name='email' style="color:black">
     </div>
 
     <div class='form-row'>
       <label for='form_Pass'>Пароль: </label>
-      <input type='password' id='formPass' name='Pass'>
+      <input type='password' id='formPass' name='password' style="color:black">
     </div>
-
     <div class="centered col-xs-12 col-md-12" style="text-orientation: center; padding:0!important">
-      <button style="height:3em;" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Регистрация</button>
-      <button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Вход</button>
+       <button class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Вход</button>
     </div>
-
 	</form>
+  <div class="centered col-xs-12 col-md-12" style="text-orientation: center; padding:0!important">
+      <button style="height:3em;" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s" onClick="location.href='/signup'">Регистрация</button>
+    </div>
 </body>
 </html>

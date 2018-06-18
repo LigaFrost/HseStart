@@ -16,6 +16,16 @@
   <link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
 
 </head>
+{% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <div class="alert alert-warning alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+            {{message}}
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
 
 <header>
 
@@ -34,14 +44,15 @@
 			</div>
 
 </header>
+{% block body %}
 <body style="height: -webkit-fill-available; background: #BBD2C5; background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);background: linear-gradient(to bottom, #292E49, #536976, #BBD2C5);">
 <div class="centered" style="color:#fff; padding-bottom:1.5em;font-family:'Noto Sans';">
     <h1>Регистрация</h1>
   </div>
-<form action="/add_student" method='post' enctype="multipart/form-data" class='reg-form'>  
+<form action="/signup/" method='post' enctype="multipart/form-data" class='reg-form'>  
 
 		<div class='form-row'>
-			<label for='first_name'>Имя: </label>
+			<label for='form_fname'>Имя: </label>
     		<input type='text' id='first_name' name='first_name' style="color:black">
   		</div>
 
@@ -97,5 +108,7 @@
 		</div>
 
 	</form>
+
+   {% endblock %}
 </body>
 </html>

@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>HseStartTeachers</title>
-	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="{{url_for('static', filename = 'css/style.css')}}" rel="stylesheet">
-    <link rel="shortcut icon" href="images/logo.png">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="{{url_for('static', filename = 'images/logo.png')}}">
+	  <link rel="stylesheet" href="{{url_for('static',filename='font-awesome/css/font-awesome.min.css')}}">
     <!-- Bootstrap -->
     <link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
 
@@ -21,14 +21,14 @@
 
 	  	<nav class="navbar navbar-default" style="height: auto; background:inherit;">
 
-				<div class="row" style="margin:0!important">
-					<div class="col-xs-12 col-md-1" style="padding-left:2em; padding-top: 0.5em;">
-				  <a href="/">
-				  			<img class="logo" style="transform: scaleX(-1);" src="{{url_for('static', filename = 'images/logo.png')}}"></a>
-				  	</div>
+        <div class="row" style="margin:0!important">
+          <div class="col-xs-12 col-md-1" style="padding-left:2em; padding-top: 0.5em;">
+          <a href="/student">
+                <img class="logo" style="transform: scaleX(-1);" src="{{url_for('static', filename = 'images/logo.png')}}"></a>
+            </div>
 
-				<div class="menu-items centered col-sm-12 col-md-11" style="text-orientation: center; padding:0!important">
-					<button onclick="window.location.href='/quiz'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Quiz</button>
+        <div class="menu-items centered col-sm-12 col-md-11" style="text-orientation: center; padding:0!important">
+          <button onclick="window.location.href='/quiz'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Quiz</button>
           <button onclick="window.location.href='/curators'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Curators</button>
           <button onclick="window.location.href='/teachers'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">Teachers</button>
           <button onclick="window.location.href='https://ba.hse.ru/faq'" class="button button--nuka button--round-l button--inverted button--text-thick button--text-upper button--size-s">FAQ</button>
@@ -37,14 +37,14 @@
           <li><a cl type="button" data-toggle="collapse" name="exitbutton" aria-expanded="false">
 
             <a href="/logout"><i class="fa fa-sign-out fa-lg" aria-hidden="true" style="font-size: 3em"></i></a></button></li>
-				</div>
-			</div>
+        </div>
+      </div>
 
 </header>
   <body style=" height: -webkit-fill-available; background: #BBD2C5; background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);background: linear-gradient(to bottom, #292E49, #536976, #BBD2C5);">
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Anosova.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Anosova.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -54,7 +54,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Belousov.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Belousov.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -64,7 +64,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Belova.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Belova.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -74,7 +74,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Efremov.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Efremov.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -84,7 +84,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Bronevich.png);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Bronevich.png')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -94,7 +94,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/ka.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/ka.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -104,7 +104,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Kerov.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Kerov.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -114,7 +114,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Lechich.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Lechich.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -124,7 +124,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Martynov.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Martynov.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -134,7 +134,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Poklonov.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Poklonov.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -144,7 +144,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Rybushkina.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Rybushkina.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -154,7 +154,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Shirokov.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Shirokov.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -164,7 +164,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Shulga.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Shulga.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -174,7 +174,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Shvarz.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Shvarz.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -184,7 +184,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Shvydun.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Shvydun.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -194,7 +194,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Subochev.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Subochev.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -204,7 +204,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Syzyh.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Syzyh.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -214,7 +214,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Yampol.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Yampol.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -224,7 +224,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;">
-        <div class="krug" style="background-image: url(images/Teachers/Zlotnik.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Zlotnik.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
@@ -234,7 +234,7 @@
       </div>
 
       <div class="container col-xs-12 col-md-3" style="padding-top:11em;padding-bottom:3em;">
-        <div class="krug" style="background-image: url(images/Teachers/Kirsanov.jpg);background-size: cover">
+        <div class="krug" style="background-image: url({{url_for('static', filename = 'images/Teachers/Kirsanov.jpg')}});background-size: cover">
             <ul class="group col-sm-12 col-md-12">
       </div>
 
